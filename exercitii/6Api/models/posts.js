@@ -12,5 +12,12 @@ module.exports = {
             });
             next();
         });
+    },
+    deleteItem: function (req, res, next) {
+        console.log(req.params);
+        db.remove(req.params.id, function (err, data){
+            res.json(data);
+            next();
+        });
     }
 };

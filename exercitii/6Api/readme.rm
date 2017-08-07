@@ -1,0 +1,6 @@
+api/
+    posts - GET - return all posts
+    posts/:id - GET - return one item
+    posts - POST - insert one item
+    posts/:id - PUT - update one item
+    delete/:id - DELETE - delete one item
